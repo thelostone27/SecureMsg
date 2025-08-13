@@ -3,7 +3,6 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
 }
 
-// Make sure all modules can pull dependencies
 allprojects {
     repositories {
         google()
