@@ -1,2 +1,9 @@
 rootProject.name = 'SecureMsg'
 include ':app'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
