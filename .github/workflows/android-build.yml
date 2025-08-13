@@ -23,8 +23,11 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x gradlew
 
-    - name: Build Debug APK
-      run: ./gradlew clean assembleDebug --refresh-dependencies
+    - name: Clean caches and build APK
+      run: |
+        ./gradlew cleanBuildCache
+        rm -rf ~/.gradle/caches/
+        ./gradlew clean assembleDebug --refresh-dependencies
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
