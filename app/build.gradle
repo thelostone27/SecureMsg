@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.example.securemsg" // change to your actual package
+    namespace "com.example.securemsg" // change to your package
     compileSdk 34
 
     defaultConfig {
