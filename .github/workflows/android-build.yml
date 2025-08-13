@@ -24,8 +24,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build Debug APK
-      run: ./gradlew clean assembleDebug --refresh-dependencies --warning-mode all --info
-    - name: Upload APK artifact
+      run: ./gradlew wrapper --gradle-version 9.0.1 --distribution-type all    - name: Upload APK artifact
       uses: actions/upload-artifact@v4
       with:
         name: SecureMsg-debug-apk
