@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace "com.example.securemsg" // change to match your actual package
+    namespace "com.example.securemsg" // replace with your actual package
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.securemsg" // change if needed
+        applicationId "com.example.securemsg" // match namespace
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -21,7 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            // keep defaults unless you need extra debug settings
+            // defaults are fine
         }
     }
 
