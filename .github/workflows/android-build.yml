@@ -1,6 +1,7 @@
 
 name: Android Build
- working_directory: SecureMsg
+
+ 
   push:
     branches:
       - main
@@ -8,7 +9,8 @@ name: Android Build
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+  working_directory: SecureMsg
+  runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
