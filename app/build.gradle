@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.example.securemsg" // Change to your package
+    namespace "com.example.securemsg" // Change to your actual package
     compileSdk 34
 
     defaultConfig {
@@ -32,9 +32,7 @@ android {
 }
 
 dependencies {
+    // Only essential dependencies for a clean build
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
     implementation 'androidx.core:core-ktx:1.12.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
