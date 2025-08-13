@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.example.securemsg" // Change to your actual package
+    namespace "com.example.securemsg" // Replace with your actual package
     compileSdk 34
 
     defaultConfig {
@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-    // Minimal essential dependencies
+    // Essential dependencies only
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
