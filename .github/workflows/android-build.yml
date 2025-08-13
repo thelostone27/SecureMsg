@@ -1,7 +1,6 @@
 
 name: Android Build
-
-on:
+ working_directory: SecureMsg/
   push:
     branches:
       - main
